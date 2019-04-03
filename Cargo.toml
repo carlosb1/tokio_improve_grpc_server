@@ -1,0 +1,21 @@
+[package]
+name = "tokio_improve_grpc_server"
+version = "0.1.0"
+authors = ["Carlos B <carlos.baezruiz@gmail.com>"]
+edition = "2018"
+
+[lib]
+name="mvpgrpc"
+path="src/lib.rs"
+proc-macro=true
+
+[[bin]]
+name="example"
+path="src/main.rs"
+
+[dependencies]
+futures="^0.1.26"
+proc-macro2="0.4"
+syn = { version = "0.15", features = ["full", "extra-traits"] }
+quote="0.6"
+
