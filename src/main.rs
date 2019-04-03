@@ -8,7 +8,6 @@ use futures::Future;
 use futures::Stream;
 use mvpgrpc::{ex_simple, ex_1};
 
-
 struct MyGreeter;
 
 impl MyGreeter {
@@ -28,6 +27,10 @@ pub fn ex1() -> i32 {
     1
 }
 
+
+#[mvpgrpc::ex_2(param1="my_first_param!")]
+pub fn ex2() {
+}
 
 fn main() {
     println!("{:}",ex0());
