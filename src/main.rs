@@ -2,10 +2,6 @@ extern crate mvpgrpc;
 extern crate futures;
 
 
-use std::net::SocketAddr;
-
-use futures::Future;
-use futures::Stream;
 use mvpgrpc::{ex_simple, ex_1};
 
 struct MyGreeter;
@@ -35,7 +31,8 @@ pub fn ex2() {
 fn main() {
     println!("{:}",ex0());
     println!("{:}",ex1());
-    println!("{:}",ex_1a());
+    //println!("{:}",ex_1a());
+    ex2();
     //println!("{:}",my_new_answer());
     //let greeter = MyGreeter::new();
 
